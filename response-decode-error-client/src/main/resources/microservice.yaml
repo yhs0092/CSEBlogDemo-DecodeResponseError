@@ -1,0 +1,28 @@
+API_GATEWAY: https://cse.cn-north-1.myhuaweicloud.com:443
+
+APPLICATION_ID: response-decode-error
+service_description:
+  name: client
+  version: 0.0.1
+cse:
+  service:
+    registry:
+      address: ${API_GATEWAY}
+      instance:
+        watch: false
+  config:
+    client:
+      serverUri: ${API_GATEWAY}
+      refreshMode: 1
+      refresh_interval: 5000
+  monitor:
+    client:
+      serverUri: ${API_GATEWAY}
+  rest:
+    address: 0.0.0.0:18080
+  credentials:
+    accessKey: ak
+    secretKey: sk
+    akskCustomCipher: default
+  accesslog:
+    enabled: true
