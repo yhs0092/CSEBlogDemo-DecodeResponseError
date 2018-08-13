@@ -1,17 +1,24 @@
 package com.github.yhs0092.blogdemo.javachassis.service;
 
-import java.util.Date;
-
 public class TestResponse {
-  private Date content;
+  private String content;
 
-  public Date getContent() {
+  public String getContent() {
     return content;
   }
 
-  public void setContent(Date content) {
+  public void setContent(String content) {
     this.content = content;
   }
+  //  private Date content;
+//
+//  public Date getContent() {
+//    return content;
+//  }
+//
+//  public void setContent(Date content) {
+//    this.content = content;
+//  }
 
   @Override
   public String toString() {
